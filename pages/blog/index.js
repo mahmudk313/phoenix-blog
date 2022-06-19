@@ -1,5 +1,8 @@
+import BlogFeeds from './../../components/blog'
+
 const Blog = props => {
     return (
+        <BlogFeeds />
     )
 }
 
