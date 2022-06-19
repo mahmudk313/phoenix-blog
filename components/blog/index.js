@@ -1,5 +1,5 @@
 
-export default function Blog() {
+export default function Blogfeeds() {
   return(
     <>
         <div class="p-4 md:w-1/3" >
