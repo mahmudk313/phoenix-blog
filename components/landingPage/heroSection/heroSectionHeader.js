@@ -6,9 +6,7 @@ import Link from 'next/link'
 export default function HeroSectionHeader() { 
     const navigation = [
         { name: 'Blog', href: '/blog' },
-        { name: 'Features', href: '#' },
-        { name: 'Marketplace', href: '#' },
-        { name: 'Company', href: '#' },
+        { name: 'Contact-Us', href: '/contactUs' },
       ]
 
     return (
