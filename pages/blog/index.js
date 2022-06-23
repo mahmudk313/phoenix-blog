@@ -1,8 +1,11 @@
-import BlogFeeds from './../../components/blog'
-
+import Blogfeeds from './../../components/blog'
+import Header from './../../components/layout/header'
 const Blog = props => {
     return (
-        <BlogFeeds />
+        <>
+        <Header />
+        <Blogfeeds />
+        </>
     )
 }
 
