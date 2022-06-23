@@ -1,154 +1,76 @@
 
 export default function Blogfeeds() {
+
+  const posts = [
+    {
+        title: "What is SaaS? Software as a Service Explained",
+        desc: "Going into this journey, I had a standard therapy regimen, based on looking at the research literature. After I saw the movie, I started to ask other people what they did for their anxiety, and some",
+        img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        authorLogo: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+        authorName: "Sidi dev",
+        date: "Jan 4 2022",
+        href: "javascript:void(0)"
+    },
+    {
+        title: "A Quick Guide to WordPress Hosting",
+        desc: "According to him, â€œI'm still surprised that this has happened. But we are surprised because we are so surprised.â€More revelations about Whittington will be featured in the film",
+        img: "https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        authorLogo: "https://api.uifaces.co/our-content/donated/FJkauyEa.jpg",
+        authorName: "Micheal",
+        date: "Jan 4 2022",
+        href: "javascript:void(0)"
+    },
+    {
+        title: "7 Promising VS Code Extensions Introduced in 2022",
+        desc: "I hope I remembered all the stuff that they needed to know. They're like, 'okay,' and write it in their little reading notebooks. I realized today that I have all this stuff that",
+        img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        authorLogo: "https://randomuser.me/api/portraits/men/46.jpg",
+        authorName: "Luis",
+        date: "Jan 4 2022",
+        href: "javascript:void(0)"
+    }
+]
+
   return(
     <>
-        <div class="p-4 md:w-1/3" >
-            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <div class="w-full">
-                    <div class="w-full flex p-2">
-                        <div class="p-2 ">
-                        <img 
-                            src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/Tcc_img%2Flogo.png?alt=media&token=5e5738c4-8ffd-44f9-b47a-57d07e0b7939" alt="author" 
-                            class="w-10 h-10 rounded-full overflow-hidden"/>
-                        </div>
-                        <div class="pl-2 pt-2 ">
-                        <p class="font-bold">Vipin Bansal</p>
-                        <p class="text-xs">2 June 2022</p>
-                        </div>
-                    </div>
-                </div>
-                
-            
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/blog.jpg?alt=media&token=271cb624-94d4-468d-a14d-455377ba75c2" alt="blog cover"/>
-            
-            <div class="p-4">
-                <h2 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Web development</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">This is a blog template</h1>
-                <div class="flex items-center flex-wrap ">
-                <a href="/" class="text-green-800  md:mb-2 lg:mb-0">
-                    <p class="inline-flex items-center">Read Blog
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                    </p>
-                </a>
-                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg class="w-4 h-4 mr-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                    </svg>
-                    24
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                    89
-                </span>
-                </div>
-                
-                
-            </div>
-            </div>
-        </div>
-        <div class="p-4 md:w-1/3" >
-            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <div class="w-full">
-                    <div class="w-full flex p-2">
-                        <div class="p-2 ">
-                        <img 
-                            src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/Tcc_img%2Flogo.png?alt=media&token=5e5738c4-8ffd-44f9-b47a-57d07e0b7939" alt="author" 
-                            class="w-10 h-10 rounded-full overflow-hidden"/>
-                        </div>
-                        <div class="pl-2 pt-2 ">
-                        <p class="font-bold">Vipin Bansal</p>
-                        <p class="text-xs">2 June 2022</p>
-                        </div>
-                    </div>
-                </div>
-                
-            
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/blog.jpg?alt=media&token=271cb624-94d4-468d-a14d-455377ba75c2" alt="blog cover"/>
-            
-            <div class="p-4">
-                <h2 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Web development</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">This is a blog template</h1>
-                <div class="flex items-center flex-wrap ">
-                <a href="/" class="text-green-800  md:mb-2 lg:mb-0">
-                    <p class="inline-flex items-center">Read Blog
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                    </p>
-                </a>
-                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg class="w-4 h-4 mr-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                    </svg>
-                    24
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                    89
-                </span>
-                </div>
-                
-                
-            </div>
-            </div>
-        </div>
-        <div class="p-4 md:w-1/3" >
-            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <div class="w-full">
-                    <div class="w-full flex p-2">
-                        <div class="p-2 ">
-                        <img 
-                            src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/Tcc_img%2Flogo.png?alt=media&token=5e5738c4-8ffd-44f9-b47a-57d07e0b7939" alt="author" 
-                            class="w-10 h-10 rounded-full overflow-hidden"/>
-                        </div>
-                        <div class="pl-2 pt-2 ">
-                        <p class="font-bold">Vipin Bansal</p>
-                        <p class="text-xs">2 June 2022</p>
-                        </div>
-                    </div>
-                </div>
-                
-            
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/blog.jpg?alt=media&token=271cb624-94d4-468d-a14d-455377ba75c2" alt="blog cover"/>
-            
-            <div class="p-4">
-                <h2 class="tracking-widest text-xs title-font font-bold text-green-400 mb-1 uppercase ">Web development</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">This is a blog template</h1>
-                <div class="flex items-center flex-wrap ">
-                <a href="/" class="text-green-800  md:mb-2 lg:mb-0">
-                    <p class="inline-flex items-center">Read Blog
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                    </p>
-                </a>
-                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg class="w-4 h-4 mr-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                    </svg>
-                    24
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>
-                    89
-                </span>
-                </div>
-                
-                
-            </div>
-            </div>
-        </div>
+
+      <section className="mt-12 mx-auto px-4 max-w-screen-xl lg:px-8">
+          <div className="text-center">
+              <h1 className="text-3xl text-gray-800 font-semibold">
+                  Blog
+              </h1>
+              {/* <p className="mt-3 text-gray-500">
+                  Blogs that are loved by the community. Updated every hour.
+              </p> */}
+          </div>
+          <div className="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              {
+                  posts.map((items, key) => (
+                      <article className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm" key={key}>
+                          <a href={items.href}>
+                              <img src={items.img} loading="lazy" alt={items.title}  className="w-full h-48 rounded-t-md" />
+                              <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
+                                  <div className="flex-none w-10 h-10 rounded-full">
+                                      <img src={items.authorLogo} className="w-full h-full rounded-full" alt={items.authorName} />
+                                  </div>
+                                  <div className="ml-3">
+                                      <span className="block text-gray-900">{items.authorName}</span>
+                                      <span className="block text-gray-400 text-sm">{items.date}</span>
+                                  </div>
+                              </div>
+                              <div className="pt-3 ml-4 mr-2 mb-3">
+                                  <h3 className="text-xl text-gray-900">
+                                      {items.title}
+                                  </h3>
+                                  <p className="text-gray-400 text-sm mt-1">{items.desc}</p>
+                              </div>
+                          </a>
+                      </article>
+                  ))
+              }
+          </div>
+      </section>
+
     </>
   )
 }
