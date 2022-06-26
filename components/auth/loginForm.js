@@ -8,9 +8,7 @@ export default function LoginForm() {
     return(
         <form className="mt-8 space-y-6" action="#" method="POST">
             <input type="hidden" name="remember" defaultValue="true" />
-            <div className="rounded-md shadow-sm -space-y-px">
-                <LoginInputs />
-            </div>
+            <LoginInputs />
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
                     <input
