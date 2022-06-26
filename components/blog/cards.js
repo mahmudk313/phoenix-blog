@@ -12,7 +12,8 @@ export default function Cards () {
             authorName: "Sidi dev",
             date: "Jan 4 2022",
             href: "/blog/article/[title]",
-            as: "/blog/article/"
+            as: "/blog/article/",
+            id: 23
         },
         {
             title: "A Quick Guide to WordPress Hosting",
@@ -22,7 +23,8 @@ export default function Cards () {
             authorName: "Micheal",
             date: "Jan 4 2022",
             href: "/blog/article/[title]",
-            as: "/blog/article/"
+            as: "/blog/article/",
+            id: 24
         },
         {
             title: "7 Promising VS Code Extensions Introduced in 2022",

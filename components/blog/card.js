@@ -1,10 +1,9 @@
 import Link from 'next/link'
 
 export default function Card ({ items }) {
-    console.log(items)
     return (
         <article className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm" >
-            <Link href={items.href} as={`${items.as}${items.title}`}>
+            <Link href={{pathname : items.href, query:{id:items.id, text:items.desc}}} as={`${items.as}${items.title}`} >
                 <a>
                     <img src={items.img} loading="lazy" alt={items.title}  className="w-full h-48 rounded-t-md" />
                     <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
