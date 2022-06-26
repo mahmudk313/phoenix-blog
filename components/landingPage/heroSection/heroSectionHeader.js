@@ -41,7 +41,7 @@ export default function HeroSectionHeader() {
                         </a>
                     </Link>
                     ))}
-                    <Link href="#">
+                    <Link href="/auth/login">
                         <a className="font-medium text-indigo-600 hover:text-indigo-500">
                             Log in
                         </a>
