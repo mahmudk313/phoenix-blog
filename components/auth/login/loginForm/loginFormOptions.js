@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+//forget password function & page not created!!!
+
 export default function LoginFormOptions() {
     return(
         <div className="flex items-center justify-between">
@@ -16,7 +18,8 @@ export default function LoginFormOptions() {
             </div>
 
             <div className="text-sm">
-                <Link href="#" >
+                {/* edit here, no Link defined!! */}
+                <Link href="#" >   
                     <a className="font-medium text-indigo-600 hover:text-indigo-500">
                         Forgot your password?
                     </a>
