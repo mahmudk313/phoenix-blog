@@ -1,9 +1,9 @@
 import country from "../../general/country";
 //Components
-import SignOutField from "./signOutField";
-import SignOutBtns from "./signOutBtns";
+import SignUpField from "./signUpField";
+import SignUpBtns from "./signUpBtns";
 
-export default function SignOutForm() {
+export default function SignUpForm() {
     const fields = [
         {text:"First name", htmlFor:"firstName", type:"text", name:"firstName", id:"firstName", autoComplete: "given-name"},
         {text:"Last name", htmlFor:"lsatName", type:"text", name:"lastName", id:"lastName", autoComplete: "family-name"},
@@ -19,11 +19,11 @@ export default function SignOutForm() {
                     <div className="px-4 py-5 bg-white sm:p-6">
                         <div className="grid grid-cols-6 gap-6">
                             {
-                                fields.map(item=> <SignOutField key={item.id} {...item} />)
+                                fields.map(item=> <SignUpField key={item.id} {...item} />)
                             }
                         </div>
                     </div>
-                    <SignOutBtns />
+                    <SignUpBtns />
                 </div>
             </form>
         </div>

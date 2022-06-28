@@ -1,4 +1,4 @@
-export default function SignOutTitle() {
+export default function SignUpTitle() {
     return(
         <div className="py-4">
             <div className="px-4 sm:px-0">

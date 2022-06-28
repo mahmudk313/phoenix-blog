@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function SignOutBtns() {
+export default function SignUpBtns() {
     return(
         <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
             <Link href="/">

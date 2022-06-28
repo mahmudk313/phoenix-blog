@@ -1,8 +1,8 @@
-import SignOut from "../../components/auth/signOut"
+import SignUp from "../../components/auth/signUp"
 export default function CreateAccount() {
     return (
         <>
-            <SignOut />
+            <SignUp />
         </>
     )
 }

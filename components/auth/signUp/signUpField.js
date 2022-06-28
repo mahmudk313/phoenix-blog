@@ -1,4 +1,4 @@
-export default function SignOutField({text, htmlfor, type, name, id, autoComplete, select, selectOptions}) {
+export default function SignUpField({text, htmlfor, type, name, id, autoComplete, select, selectOptions}) {
     return(
         <div className="col-span-6 sm:col-span-3">
             <label htmlFor={htmlfor} className="block text-sm font-medium text-gray-700">
@@ -18,7 +18,7 @@ export default function SignOutField({text, htmlfor, type, name, id, autoComplet
                         id={id}
                         name={name}
                         autoComplete={autoComplete}
-                        className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:Upline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     >
                         {
                             selectOptions.map(item => <option value={item.value}>{item.text}</option>)
