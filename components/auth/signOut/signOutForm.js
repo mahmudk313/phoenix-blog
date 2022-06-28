@@ -1,96 +1,26 @@
 import Link from "next/link";
 import country from "../../general/country";
 
+import SignOutField from "./signOutField";
+
 export default function SignOutForm() {
+    const fields = [
+        {text:"First name", htmlFor:"firstName", type:"text", name:"firstName", id:"firstName", autoComplete: "given-name"},
+        {text:"Last name", htmlFor:"lsatName", type:"text", name:"lastName", id:"lastName", autoComplete: "family-name"},
+        {text:"Email address", htmlFor:"emailAddress", type:"email", name:"emailAddress", id:"emailAddress", autoComplete: "email"},
+        {text:"Country", htmlFor:"country", name:"country", id:"country", autoComplete: "country-name", select: true, selectOptions: country},
+        {text:"Password", htmlFor:"password", type:"password", name:"password", id:"password"},
+        {text:"Confirm Password", htmlFor:"confirmPassword", type:"password", name:"confirmPassword", id:"confirmPassword"},
+    ]
     return(
         <div className="mt-5 md:mt-0">
             <form action="#" method="POST">
                 <div className="shadow overflow-hidden sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
                         <div className="grid grid-cols-6 gap-6">
-                            <div className="col-span-6 sm:col-span-3">
-                                <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                                    First name
-                                </label>
-                                <input
-                                    type="text"
-                                    name="first-name"
-                                    id="first-name"
-                                    required
-                                    autoComplete="given-name"
-                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-
-                            <div className="col-span-6 sm:col-span-3">
-                                <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
-                                    Last name
-                                </label>
-                                <input
-                                    type="text"
-                                    name="last-name"
-                                    id="last-name"
-                                    required
-                                    autoComplete="family-name"
-                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-
-                            <div className="col-span-6 sm:col-span-3">
-                                <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
-                                    Email address
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email-address"
-                                    id="email-address"
-                                    required
-                                    autoComplete="email"
-                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-
-                            <div className="col-span-6 sm:col-span-3">
-                                <label htmlFor="country" className="block text-sm font-medium text-gray-700">
-                                    Country
-                                </label>
-                                <select
-                                    id="country"
-                                    name="country"
-                                    autoComplete="country-name"
-                                    className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                >
-                                    {
-                                        country.map(item => <option value={item.value}>{item.text}</option>)
-                                    }
-                                </select>
-                            </div>
-
-                            <div className="col-span-6 sm:col-span-3">
-                                <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
-                                    Password
-                                </label>
-                                <input
-                                    type="password"
-                                    name="password"
-                                    id="password"
-                                    required
-                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-                            <div className="col-span-6 sm:col-span-3">
-                                <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
-                                    Confirm Password
-                                </label>
-                                <input
-                                    type="password"
-                                    name="confirmPassword"
-                                    id="confirmPassword"
-                                    required
-                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                                />
-                            </div>
-
+                            {
+                                fields.map(item=> <SignOutField key={item.id} {...item} />)
+                            }
                         </div>
                     </div>
                     <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
