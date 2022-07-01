@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function HeroSectionHeader() { 
     const navigation = [
@@ -18,7 +19,7 @@ export default function HeroSectionHeader() {
                     <Link href="/">
                         <a>
                             <span className="sr-only">Workflow</span>
-                            <img
+                            <Image
                             alt="Workflow"
                             className="h-8 w-auto sm:h-10"
                             src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
@@ -66,7 +67,7 @@ export default function HeroSectionHeader() {
                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
-                        <img
+                        <Image
                         className="h-8 w-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                         alt=""

@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function LoginTitleBox() {
     return (
         <div>
-            <img
+            <Image
                 className="mx-auto h-12 w-auto"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                 alt="Workflow"
