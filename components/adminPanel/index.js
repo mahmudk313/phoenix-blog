@@ -1,9 +1,9 @@
-import DashBoard from "./dashBoard";
+import Navbar from "./navBar";
 
 export default function AdminPanel() {
     return(
         <>
-            <DashBoard />
+            <Navbar />
         </>
     )
 }

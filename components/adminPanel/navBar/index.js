@@ -2,7 +2,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import NavBar from './navBar'
+import NavBarItem from './navBarItem'
 
 const user = {
   name: 'Tom Cook',
@@ -28,14 +28,6 @@ function classNames(...classes) {
 export default function DashBoard() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
       <div className="min-h-full">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
@@ -53,7 +45,7 @@ export default function DashBoard() {
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
-                          <NavBar {...item} />
+                          <NavBarItem {...item} />
                         ))}
                       </div>
                     </div>
