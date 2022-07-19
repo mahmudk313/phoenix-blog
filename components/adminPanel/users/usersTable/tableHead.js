@@ -2,6 +2,7 @@ export default function TableHead(thItems) {
 
     const tableHeadIteams = [
         "users",
+        "email",
         "role",
         "Created At",
         "Status"
