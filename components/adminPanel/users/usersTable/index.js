@@ -3,27 +3,10 @@ import TableHead from "./tableHead"
 
 export default function UsersTable () {
 
-    const tableHeadIteams = [
-        "users",
-        "role",
-        "Created At",
-        "Status"
-    ]
-
     return(
         <table className="min-w-full leading-normal">
 
-            <thead>
-                <tr>
-                    {tableHeadIteams.map((item, index) => (
-                        <th key={index} scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
-                            {item}
-                        </th>
-                    ))}
-                    <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
-                    </th>
-                </tr>
-            </thead>
+            <TableHead />
             
             <tbody>
                 <tr>
