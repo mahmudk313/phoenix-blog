@@ -7,5 +7,3 @@ export const store = configureStore({
     todos : todoReducer,
   },
 })
-
-// export default store;
