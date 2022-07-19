@@ -1,28 +1,33 @@
-export default function UsersTableRow() {
+export default function UsersTableRow({name, lastName, email, permission, createDate, status, image }) {
     return(
         <tr>
             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                 <div className="flex items-center">
                     <div className="flex-shrink-0">
                         <a href="#" className="block relative">
-                            <img alt="profil" src="/images/person/8.jpg" className="mx-auto object-cover rounded-full h-10 w-10 "/>
+                            <img alt="profil" src={image} className="mx-auto object-cover rounded-full h-10 w-10 "/>
                         </a>
                     </div>
                     <div className="ml-3">
                         <p className="text-gray-900 whitespace-no-wrap">
-                            Jean marc
+                            {`${name} ${lastName}`}
                         </p>
                     </div>
                 </div>
             </td>
             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                 <p className="text-gray-900 whitespace-no-wrap">
-                    Admin
+                    {email}
                 </p>
             </td>
             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                 <p className="text-gray-900 whitespace-no-wrap">
-                    12/09/2020
+                    {permission}
+                </p>
+            </td>
+            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                <p className="text-gray-900 whitespace-no-wrap">
+                    {createDate}
                 </p>
             </td>
             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
@@ -30,7 +35,7 @@ export default function UsersTableRow() {
                     <span aria-hidden="true" className="absolute inset-0 bg-green-200 opacity-50 rounded-full">
                     </span>
                     <span className="relative">
-                        active
+                        {status}
                     </span>
                 </span>
             </td>
