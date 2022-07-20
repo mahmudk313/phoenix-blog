@@ -13,8 +13,8 @@ const user = {
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Articles', href: '#', current: false },
-  { name: 'Users', href: '../adminPanel/users', current: false },
-  { name: 'Todo', href: '../adminPanel/todo', current: false },
+  { name: 'Users', href: '/adminPanel/users', current: false },
+  { name: 'Todo', href: '/adminPanel/todo', current: false },
 ]
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
@@ -44,8 +44,8 @@ export default function DashBoard() {
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
-                        {navigation.map((item) => (
-                          <NavBarItem {...item} />
+                        {navigation.map((item, index) => (
+                          <NavBarItem key={index} {...item} />
                         ))}
                       </div>
                     </div>

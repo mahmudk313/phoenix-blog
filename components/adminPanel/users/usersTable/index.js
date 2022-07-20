@@ -8,7 +8,6 @@ import { useSelector } from "react-redux"
 
 export default function UsersTable () {
     const users = useSelector(state => state.users.list)
-    console.log(users)
 
     return(
         <table className="min-w-full leading-normal">
@@ -17,7 +16,7 @@ export default function UsersTable () {
             
             <tbody>
                 {users.map(user => (
-                        <UsersTableRow {...user} />
+                        <UsersTableRow key={user.id} {...user} />
                     )
                 )}
                 <Pagination />

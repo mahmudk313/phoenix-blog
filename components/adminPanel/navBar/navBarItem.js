@@ -11,11 +11,9 @@ export default function NavBar({name, href, current}) {
     // }
     return(
         <>
-            <Link href="#">
+            <Link href={href} >
                 <a
-                    onClick={(e)=>clickHandler}
                     key={name}
-                    href={href}
                     className={classNames(
                     current
                         ? 'bg-gray-900 text-white'
