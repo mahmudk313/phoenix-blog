@@ -2,6 +2,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
 import NavBarItem from './navBarItem'
 
 const user = {
@@ -36,11 +37,15 @@ export default function DashBoard() {
                 <div className="flex items-center justify-between h-16">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <img
-                        className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                        alt="Workflow"
-                      />
+                      <Link href="/">
+                        <a>
+                          <img
+                            className="h-8 w-8"
+                            src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                            alt="Workflow"
+                          />
+                        </a>
+                      </Link>
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
