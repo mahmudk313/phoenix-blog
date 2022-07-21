@@ -1,3 +1,5 @@
+import { useState } from "react";
+//Const Values
 import country from "../../country";
 import userRoles from "./../../userRoles";
 import statuses from "../../statuses";
@@ -7,6 +9,8 @@ import ModalFormBtns from "./modalFormBtns";
 import ModalFormImageChange from "./modalFormImageChange";
 
 export default function ModalForm({closeModal}) {
+    const [user, setUser] = useState({})
+
     const fields = [
         {text:"First name", htmlFor:"firstName", type:"text", name:"firstName", id:"firstName", autoComplete: "given-name"},
         {text:"Last name", htmlFor:"lastName", type:"text", name:"lastName", id:"lastName", autoComplete: "family-name"},
@@ -17,6 +21,19 @@ export default function ModalForm({closeModal}) {
         {text:"Password", htmlFor:"password", type:"password", name:"password", id:"password"},
         {text:"Confirm Password", htmlFor:"confirmPassword", type:"password", name:"confirmPassword", id:"confirmPassword"},
     ]
+
+    let inputChangeHandler = e => {
+        e.preventDefault();
+        let [inputName, inputValue] = [e.target.name, e.target.value]
+        setUser(prevState => {
+            return {
+                ...prevState,
+                [inputName]: inputValue,
+            }
+        })
+        console.log(user)
+    }
+
     return(
         <div className="mt-5 md:mt-0">
             <form action="#" method="POST">
@@ -25,7 +42,7 @@ export default function ModalForm({closeModal}) {
                         <ModalFormImageChange />
                         <div className="grid grid-cols-6 gap-6">
                             {
-                                fields.map(field=> <ModalFormField key={field.id} {...field} />)
+                                fields.map(field=> <ModalFormField key={field.id} inputChangeHandler={inputChangeHandler} {...field} />)
                             }
                         </div>
                     </div>
