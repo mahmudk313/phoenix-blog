@@ -1,11 +1,11 @@
-export default function UsersTableRow({name, lastName, email, permission, createDate, status, image }) {
+export default function UsersTableRow({name, lastName, email, permission, createDate, status, imageUrl }) {
     return(
         <tr>
             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                 <div className="flex items-center">
                     <div className="flex-shrink-0">
                         <a href="#" className="block relative">
-                            <img alt="profil" src={image} className="mx-auto object-cover rounded-full h-10 w-10 "/>
+                            <img alt="profil" src={imageUrl} className="mx-auto object-cover rounded-full h-10 w-10 "/>
                         </a>
                     </div>
                     <div className="ml-3">
