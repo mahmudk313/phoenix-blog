@@ -9,9 +9,11 @@ export default function Users() {
         <main>
             <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
                 <div className="container mx-auto px-4 sm:px-8 max-w-7xl">
-                    <div className="py-4">
-                        <Modal />
-                        <FilterForm />
+                    <div className="">
+                        <div className="flex">
+                            <FilterForm />
+                            <Modal />
+                        </div>
 
                         <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
                             <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
