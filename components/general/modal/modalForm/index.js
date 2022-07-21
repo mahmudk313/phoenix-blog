@@ -6,12 +6,8 @@ import ModalFormBtns from "./modalFormBtns"
 export default function ModalForm({closeModal}) {
     const fields = [
         {text:"First name", htmlFor:"firstName", type:"text", name:"firstName", id:"firstName", autoComplete: "given-name"},
-<<<<<<< Updated upstream
-        {text:"Last name", htmlFor:"lsatName", type:"text", name:"lastName", id:"lastName", autoComplete: "family-name"},
-=======
         {text:"Last name", htmlFor:"lastName", type:"text", name:"lastName", id:"lastName", autoComplete: "family-name"},
         {text:"Country", htmlFor:"country", name:"country", id:"country", autoComplete: "country-name", select: true, selectOptions: country},
->>>>>>> Stashed changes
         {text:"Email address", htmlFor:"emailAddress", type:"email", name:"emailAddress", id:"emailAddress", autoComplete: "email"},
         {text:"Password", htmlFor:"password", type:"password", name:"password", id:"password"},
         {text:"Confirm Password", htmlFor:"confirmPassword", type:"password", name:"confirmPassword", id:"confirmPassword"},
