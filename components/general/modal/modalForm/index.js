@@ -34,6 +34,9 @@ export default function ModalForm({closeModal}) {
         console.log(user)
     }
 
+    let submitHandler = e => {
+
+    }
     return(
         <div className="mt-5 md:mt-0">
             <form action="#" method="POST">
@@ -46,7 +49,7 @@ export default function ModalForm({closeModal}) {
                             }
                         </div>
                     </div>
-                    <ModalFormBtns closeModal={closeModal} />
+                    <ModalFormBtns closeModal={closeModal} submitHandler={submitHandler} />
                 </div>
             </form>
         </div>
