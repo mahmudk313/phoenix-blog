@@ -1,6 +1,7 @@
 //Components
 import UsersTable from "./usersTable"
 import FilterForm from "./filterForm"
+import Modal from "../../general/modal"
 
 export default function Users() {
 
@@ -9,7 +10,7 @@ export default function Users() {
             <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
                 <div className="container mx-auto px-4 sm:px-8 max-w-7xl">
                     <div className="py-4">
-                        
+                        <Modal />
                         <FilterForm />
 
                         <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
@@ -17,7 +18,7 @@ export default function Users() {
                                 
                                 <UsersTable />
 
-                                <div className="px-5 bg-white py-5 flex flex-col xs:flex-row items-center xs:justify-between">
+                                {/* <div className="px-5 bg-white py-5 flex flex-col xs:flex-row items-center xs:justify-between">
                                     <div className="flex items-center">
                                         <button type="button" className="w-full p-4 border text-base rounded-l-xl text-gray-600 bg-white hover:bg-gray-100">
                                             <svg width="9" fill="currentColor" height="8" className="" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +45,7 @@ export default function Users() {
                                             </svg>
                                         </button>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

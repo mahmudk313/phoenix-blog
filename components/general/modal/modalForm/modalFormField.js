@@ -1,4 +1,4 @@
-export default function SignUpField({text, htmlfor, type, name, id, autoComplete, select, selectOptions}) {
+export default function modalFormField({text, htmlfor, type, name, id, autoComplete, select, selectOptions}) {
     return(
         <div className="col-span-6 sm:col-span-3">
             <label htmlFor={htmlfor} className="block text-sm font-medium text-gray-700">
