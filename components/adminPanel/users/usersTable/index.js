@@ -19,7 +19,6 @@ export default function UsersTable () {
                         <UsersTableRow key={user.id} {...user} />
                     )
                 )}
-                <Pagination />
             </tbody>
         </table>
     )
