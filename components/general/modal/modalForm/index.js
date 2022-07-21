@@ -4,6 +4,7 @@ import statuses from "../../statuses";
 //Components
 import ModalFormField from "./modalFormField";
 import ModalFormBtns from "./modalFormBtns";
+import ModalFormImageChange from "./modalFormImageChange";
 
 export default function ModalForm({closeModal}) {
     const fields = [
@@ -21,6 +22,7 @@ export default function ModalForm({closeModal}) {
             <form action="#" method="POST">
                 <div className="shadow overflow-hidden sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
+                        <ModalFormImageChange />
                         <div className="grid grid-cols-6 gap-6">
                             {
                                 fields.map(field=> <ModalFormField key={field.id} {...field} />)
