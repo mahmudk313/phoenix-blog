@@ -26,7 +26,6 @@ export default function ModalForm({closeModal}) {
     ]
 
     let inputChangeHandler = e => {
-        e.preventDefault();
         let [inputName, inputValue] = [e.target.name, e.target.value]
         setUser(prevState => {
             return {
@@ -34,7 +33,6 @@ export default function ModalForm({closeModal}) {
                 [inputName]: inputValue,
             }
         })
-        console.log(user)
     }
 
     let submitHandler = (e) => {
@@ -52,11 +50,11 @@ export default function ModalForm({closeModal}) {
                         <ModalFormImageChange />
                         <div className="grid grid-cols-6 gap-6">
                             {
-                                fields.map(field=> <ModalFormField key={field.id} inputChangeHandler={inputChangeHandler} {...field} />)
+                                fields.map((field) => <ModalFormField key={field.id} inputChangeHandler={inputChangeHandler} {...field} />)
                             }
                         </div>
                     </div>
-                    <ModalFormBtns closeModal={closeModal} submitHandler={submitHandler} />
+                    <ModalFormBtns closeModal={closeModal} />
                 </div>
             </form>
         </div>
