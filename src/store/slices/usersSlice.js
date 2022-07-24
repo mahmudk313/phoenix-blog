@@ -4,22 +4,24 @@ const usersSlice = createSlice({
     name: 'users',
     initialState: {
         list: [
-            {
-                name: "mahmud",
-                lastName: "Bak",
-                permission: "admin",
-                createDate: "7/19/2022",
-                status: "active",
-                id: 1,
-                email: "mahmudkenway@gmail.com",
-                imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-            }
+            // {
+            //     firstName: "mahmud",
+            //     lastName: "Bak",
+            //     role: "admin",
+            //     createDate: "7/19/2022",
+            //     status: "active",
+            //     id: 1,
+            //     emailAddress: "mahmudkenway@gmail.com",
+            //     imageUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            // },
         ]
     },
     reducers: {
-        
+        addUser: (state, {payload}) => {
+            state.list.push(payload.user)
+        }
     }
 })
 
-// export const {} = usersSlice.actions;
+export const { addUser } = usersSlice.actions;
 export default usersSlice.reducer;
