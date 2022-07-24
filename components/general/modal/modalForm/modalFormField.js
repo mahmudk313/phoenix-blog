@@ -23,7 +23,7 @@ export default function modalFormField({text, htmlfor, type, name, id, autoCompl
                         className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:Upline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     >
                         {
-                            selectOptions.map(item => <option value={item.value}>{item.text}</option>)
+                            selectOptions.map(item => <option key={item.value} value={item.value}>{item.text}</option>)
                         }
                     </select>
             }
