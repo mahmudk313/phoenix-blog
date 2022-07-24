@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addUser } from "./../../../../src/store/slices/usersSlice"
 //Const Values
 import country from "../../country";
 import userRoles from "./../../userRoles";
@@ -10,6 +12,7 @@ import ModalFormImageChange from "./modalFormImageChange";
 
 export default function ModalForm({closeModal}) {
     const [user, setUser] = useState({})
+    const dispatch = useDispatch();
 
     const fields = [
         {text:"First name", htmlFor:"firstName", type:"text", name:"firstName", id:"firstName", autoComplete: "given-name"},
