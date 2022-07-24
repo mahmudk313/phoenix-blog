@@ -1,7 +1,6 @@
 //Components
 import TableHead from "./tableHead"
 import UsersTableRow from "./usersTableRow"
-import Pagination from "./pagination"
 
 //redux-store
 import { useSelector } from "react-redux"
@@ -15,10 +14,13 @@ export default function UsersTable () {
             <TableHead />
             
             <tbody>
-                {users.map(user => (
+                { users.length === 0 
+                    ? <tr><th><h1>No User exist</h1></th></tr>
+                    : users.map((user) => (
                         <UsersTableRow key={user.id} {...user} />
+                        )
                     )
-                )}
+                }
             </tbody>
         </table>
     )
