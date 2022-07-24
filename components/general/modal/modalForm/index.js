@@ -34,12 +34,16 @@ export default function ModalForm({closeModal}) {
         console.log(user)
     }
 
-    let submitHandler = e => {
-
+    let submitHandler = (e) => {
+        e.preventDefault();
+        user.id = Date.now();
+        user.createDate = new Date().toLocaleDateString();
+        dispatch(addUser({user}))
+        closeModal();
     }
     return(
         <div className="mt-5 md:mt-0">
-            <form action="#" method="POST">
+            <form onSubmit={submitHandler}>
                 <div className="shadow overflow-hidden sm:rounded-md">
                     <div className="px-4 py-5 bg-white sm:p-6">
                         <ModalFormImageChange />
