@@ -1,5 +1,6 @@
 //Components
 import EditUser from "./editUser"
+import DeleteUser from "./deleteUser"
 
 export default function UsersTableRow({ firstName, lastName, emailAddress, role, createDate, status, imageUrl, id }) {
     return(
@@ -44,6 +45,7 @@ export default function UsersTableRow({ firstName, lastName, emailAddress, role,
             </td>
             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                 <EditUser userId={id} />
+                <DeleteUser userId={id} />
             </td>
         </tr>
     )
