@@ -1,4 +1,7 @@
-export default function UsersTableRow({firstName, lastName, emailAddress, role, createDate, status, imageUrl }) {
+//Components
+import EditUser from "./editUser"
+
+export default function UsersTableRow({ firstName, lastName, emailAddress, role, createDate, status, imageUrl, id }) {
     return(
         <tr>
             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
@@ -40,9 +43,7 @@ export default function UsersTableRow({firstName, lastName, emailAddress, role, 
                 </span>
             </td>
             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                    Edit
-                </a>
+                <EditUser userId={id} />
             </td>
         </tr>
     )
