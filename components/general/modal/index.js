@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 //Components
 import ModalForm from './modalForm'
 
-export default function Modal({ closeModal }) {
+export default function Modal({ closeModal, userId, editMode }) {
   return (
     <>
       <Transition appear show={true} as={Fragment}>
@@ -40,7 +40,7 @@ export default function Modal({ closeModal }) {
                     Add a new user
                   </Dialog.Title>
 
-                  <ModalForm closeModal={closeModal} />
+                  <ModalForm closeModal={closeModal} userId={userId} editMode={editMode} />
                 </Dialog.Panel>
               </Transition.Child>
             </div>

@@ -1,4 +1,4 @@
-export default function modalFormField({text, htmlfor, type, name, id, autoComplete, select, selectOptions, inputChangeHandler}) {
+export default function modalFormField({text, htmlfor, type, name, id, autoComplete, select, selectOptions, inputChangeHandler, defaultValue}) {
     return(
         <div className="col-span-6 sm:col-span-3">
             <label htmlFor={htmlfor} className="block text-sm font-medium text-gray-700">
@@ -13,6 +13,7 @@ export default function modalFormField({text, htmlfor, type, name, id, autoCompl
                         required
                         autoComplete={autoComplete}
                         onChange={inputChangeHandler}
+                        defaultValue={defaultValue}
                         className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                     />
                     : <select
@@ -20,6 +21,7 @@ export default function modalFormField({text, htmlfor, type, name, id, autoCompl
                         name={name}
                         autoComplete={autoComplete}
                         onChange={inputChangeHandler}
+                        value={defaultValue}
                         className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:Upline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     >
                         {
