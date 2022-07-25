@@ -1,7 +1,7 @@
 //Components
 import UsersTable from "./usersTable"
 import FilterForm from "./filterForm"
-import Modal from "../../general/modal"
+import AddUser from "./addUser"
 
 export default function Users() {
 
@@ -12,7 +12,7 @@ export default function Users() {
                     <div className="">
                         <div className="flex">
                             <FilterForm />
-                            <Modal />
+                            <AddUser />
                         </div>
 
                         <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
