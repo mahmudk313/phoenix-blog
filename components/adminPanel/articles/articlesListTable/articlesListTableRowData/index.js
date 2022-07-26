@@ -3,6 +3,7 @@ import Link from "next/link"
 //Components
 import List from "../../../../general/listsShow"
 import EditArticle from "./editArticlesListTableRowData";
+import DeleteArticle from "./deleteArticlesListTableRowData";
 
 export default function ArticlesListTableRowData({ id, title, authorName, category, tags, comments, status, createDate }) {
 
@@ -47,6 +48,7 @@ export default function ArticlesListTableRowData({ id, title, authorName, catego
             })}
             <List.TableData >
                 <EditArticle articleId={id} />
+                <DeleteArticle articleId={id} />               
             </List.TableData>
         </>
     )
