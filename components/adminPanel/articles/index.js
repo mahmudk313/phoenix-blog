@@ -2,7 +2,12 @@ import List from "../../general/listsShow";
 import AddArticle from "./addArticle";
 import FilterArticles from "./filterArticles"
 import ArticlesListTableHeadItems from "./articlesListTable/articlesListTableHeadItems";
+import ArticlesListTableRowData from "./articlesListTable/articlesListTableRowData";
+
+import { useSelector } from "react-redux";
+
 export default function ArticlesList() {
+    const articles = useSelector(state => state.articles.list)
 
     return (
         <main>
@@ -26,6 +31,15 @@ export default function ArticlesList() {
                                         </List.TableHeadItem>
                                     </List.TableHead>
                                     <List.TableBody>
+                                        { articles.length === 0 
+                                            ? <tr><th><h1>No User exist</h1></th></tr>
+                                            : articles.map((article) => (
+                                                    <List.TableRow key={article.id}>
+                                                        <ArticlesListTableRowData {...article} />
+                                                    </List.TableRow>
+                                                )
+                                            )
+                                        }
                                     </List.TableBody>
                                 </List.Table>
                             </List>
