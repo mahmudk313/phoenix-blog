@@ -1,5 +1,6 @@
 import List from "../../general/listsShow";
 import AddArticle from "./addArticle";
+import FilterArticles from "./filterArticles"
 export default function ArticlesList() {
 
     return (
@@ -9,6 +10,7 @@ export default function ArticlesList() {
                     <div>
                         <List.Container className="flex">
                             <List.Container className="flex items-center">
+                                <FilterArticles />
                                 <AddArticle /> 
                             </List.Container>
                         </List.Container>
