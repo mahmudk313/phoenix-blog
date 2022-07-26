@@ -1,6 +1,7 @@
 import List from "../../general/listsShow";
 import AddArticle from "./addArticle";
 import FilterArticles from "./filterArticles"
+import ArticlesListTableHeadItems from "./articlesListTable/articlesListTableHeadItems";
 export default function ArticlesList() {
 
     return (
@@ -21,6 +22,7 @@ export default function ArticlesList() {
                                 <List.Table className="min-w-full leading-normal">
                                     <List.TableHead>
                                         <List.TableHeadItem>
+                                            <ArticlesListTableHeadItems />
                                         </List.TableHeadItem>
                                     </List.TableHead>
                                     <List.TableBody>
