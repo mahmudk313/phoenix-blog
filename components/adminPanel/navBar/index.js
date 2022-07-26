@@ -13,7 +13,7 @@ const user = {
 }
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
-  { name: 'Articles', href: '#', current: false },
+  { name: 'Articles', href: '/adminPanel/articles', current: false },
   { name: 'Users', href: '/adminPanel/users', current: false },
   { name: 'Todo', href: '/adminPanel/todo', current: false },
 ]
